@@ -1,8 +1,9 @@
 def my_collect(array)
   i=0
+  output=[]
   while i<array.size
-    yield array[i]
+    array[i]=yield array[i]
     i=i+1
   end
-  return "Yup"
+  array
 end
